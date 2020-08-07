@@ -1,0 +1,45 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// glide
+@import "~@glidejs/glide/src/assets/sass/glide.core";
+@import "~@glidejs/glide/src/assets/sass/glide.theme";
+
+// custom
+@import 'partials/header';
+@import 'partials/slideshow';
+@import 'partials/howWorks';
+@import 'partials/moreClients';
+@import 'partials/isapresBrands';
+@import 'partials/footer';
+
+// toastr
+@import '~toastr/toastr';
+
+
+// general
+.section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    @extend .text-center;
+    margin-bottom: 2.6rem;
+}
+
+.section-full {
+    @extend .py-5;
+
+    & .sf-title {
+        @extend .text-center;
+        margin-bottom: 2.6rem;
+        
+    }
+}

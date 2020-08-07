@@ -1,0 +1,9 @@
+footer {
+    background: #0e2a38;
+    padding: .8rem 0;
+    color: rgba(white, .5);
+
+    & .info {
+        @extend .text-center;
+    }
+}

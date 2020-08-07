@@ -1,0 +1,20 @@
+.more-client {
+    @extend .bg-primary, .text-white;
+    
+    & .count-content {
+        @extend .d-flex, .flex-column, .justify-content-center;
+
+        & .cc-dynamic {
+            @extend .d-flex, .align-items-center, .justify-content-center;
+
+            & #countup {
+                font-size: 4rem;
+            }
+        }
+
+        & .cc-killer {
+            @extend .text-center;
+            font-size: 1.8rem;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+$heigth: 400px;
+
+.slideshow {
+  & .item {
+    @extend .d-flex, .justify-content-center, .align-items-center, .px-3;
+    position: relative;
+    height: $heigth;
+    width: 100%;
+    background: aqua;
+
+    & .content {
+      @extend .text-center;
+      position: relative;
+      color: white;
+      z-index: 90;
+
+      & .c-title {
+        font-size: 2.7em;
+        line-height: .9;
+        margin-bottom: .6em;
+      }
+
+      & .c-lead {
+        @extend .lead;
+        line-height: 1.2;
+      }
+    }
+
+    & .bg-slide {
+      position: absolute;
+      z-index: 70;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      object-position: center;
+      height: inherit;
+      width: inherit;
+    }
+
+    & .over {
+      position: absolute;
+      z-index: 80;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(black, 0.2);
+    }
+  }
+
+  & ul {
+    margin: 0;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  $heigth: 500px;
+
+  .slideshow {
+    & .item {
+      height: $heigth;
+
+      & .content {
+        & .c-title {
+          font-size: 3.5em;
+          line-height: 1;
+          margin-bottom: .2em;
+        }
+
+        & .c-lead {
+          @extend .lead;
+        }
+      }
+
+    }
+  }
+}

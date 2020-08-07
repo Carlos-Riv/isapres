@@ -1,0 +1,48 @@
+.isapres-brands {
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  background: white;
+
+  & .col {
+    @extend .text-center;
+
+    & img.i-brand {
+      max-width: 170px;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  & .col:last-child img.i-brand {
+    margin-bottom: 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .isapres-brands {
+    & .col {
+      & img.i-brand {
+        max-width: 110px;
+        margin-bottom: 0;
+      }
+    }
+
+    & .col:last-child img.i-brand {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .isapres-brands {
+    & .w-100 {
+      margin-top: 2rem;
+    }
+    & .col {
+      margin: auto 0;
+
+      & img.i-brand {
+        max-width: 150px;
+      }
+    }
+  }
+}
